@@ -1,0 +1,610 @@
+@media (min-width: 769px) {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  font-family: 'Segoe UI', sans-serif;
+  height: 100%;
+  width: 100%;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: orange;
+  padding: 10px 30px;
+  color: white;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 999;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo img {
+  height: 50px;
+}
+
+
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #161615;
+}
+
+.social-icons {
+  display: flex;
+  gap: 15px;
+}
+
+.social-icons a {
+  color: white;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #000000;
+}
+
+/* Hero Section */
+.hero {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.6)), url('https://aicdn.picsart.com/5d28cdec-aee9-4e63-bcaf-d6db798ce5a6.jpg') no-repeat center center/cover;
+  height: 100vh;
+  padding-top: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  color: whitesmoke;
+  text-align: center;
+  opacity: 100%;
+}
+
+.hero-content {
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+}
+
+.hero h1 {
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.hero h1 span {
+  font-size: 52px;
+}
+
+.hero p {
+  font-size: 16px;
+  margin: 15px 0 30px;
+}
+
+.book-btn {
+  background-color: orange;
+  padding: 12px 28px;
+  font-size: 18px;
+  color: black;
+  font-weight: bold;
+  border: none;
+  border-radius: 25px;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.book-btn:hover {
+  background-color: #ff5416;
+  color: white;
+}
+
+/* Booking Form */
+.booking-form {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 15px 20px;
+  border-radius: 15px;
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.booking-form input,
+.booking-form select {
+  padding: 10px 15px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  outline: none;
+  width: 160px;
+}
+
+/* Add this for search button styling */
+.booking-form .search-btn {
+  padding: 10px 20px;
+  background-color: orange;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.booking-form .search-btn:hover {
+  background-color: #a30000;
+}
+
+
+/* why choose us */
+
+.why-choose-us {
+  text-align: center;
+  padding: 80px 20px;
+  background-color: #fff;
+}
+
+.why-choose-us h2 {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 40px;
+  color: #222;
+}
+
+.features {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  flex-wrap: wrap;
+}
+
+.feature {
+  width: 250px;
+  text-align: center;
+}
+
+.icon-box {
+  background-color: #fce9e9;
+  display: inline-block;
+  padding: 20px;
+  border-radius: 12px;
+  margin-bottom: 15px;
+}
+
+.icon-box i {
+  font-size: 24px;
+  color: #7b1d1d;
+}
+
+.feature h3 {
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.feature p {
+  font-size: 14px;
+  color: #666;
+  line-height: 1.5;
+}
+
+/* activity box*/
+
+
+.activity-section {
+  text-align: center;
+  padding: 90px 20px;
+}
+
+.activity-section h3 {
+  font-size: 36px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.activity-section .highlight {
+  color: crimson;
+  font-style: italic;
+  font-size: 26px;
+}
+
+.activity-description {
+  max-width: 600px;
+  margin: 0 auto 40px;
+  font-size: 14px;
+  color: #555;
+}
+
+.activity-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.activity-box {
+  background: #f9f7f5;
+  border-radius: 12px;
+  padding: 30px 20px;
+  width: 260px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.06);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.activity-box:hover {
+  /*background: linear-gradient(135deg, #ff7e5f, #feb47b); /* gradient color */
+  background-color: orange;
+  color: white;
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.activity-box:hover h4,
+.activity-box:hover p,
+.activity-box:hover i {
+  color: white;
+}
+
+
+.activity-box i {
+  font-size: 40px;
+  color: orange;
+  margin-bottom: 15px;
+}
+
+.activity-box h4 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.activity-box p {
+  font-size: 14px;
+  color: #666;
+  line-height: 1.5;
+}
+
+/*book now mark*/
+.cta-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: url('https://i.pinimg.com/736x/7c/f3/a4/7cf3a4197d998b45e2f4c50e0d0a7798.jpg') no-repeat center center/cover;
+  color: white;
+  padding: 60px 80px;
+  
+}
+
+.cta-content {
+  max-width: 60%;
+}
+
+.cta-content .sub-heading {
+  font-family: 'Cursive', sans-serif;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.cta-content h2 {
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.cta-content .description {
+  font-size: 16px;
+  line-height: 1.6;
+  max-width: 500px;
+}
+
+.book-now-btn {
+  background-color: orange;
+  color: white;
+  padding: 15px 30px;
+  border-radius: 25px;
+  font-size: 16px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.book-now-btn:hover {
+  opacity: 0.9;
+  transform: scale(1.05);
+}
+
+/*about section*/
+.about-section {
+  padding: 60px 20px;
+  background-color: #fff;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.about-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.about-text {
+  flex: 1;
+  min-width: 300px;
+}
+
+.about-text h2 {
+  font-size: 24px;
+  color: #0a1e47;
+  margin-bottom: 10px;
+}
+
+.about-text h1 span {
+  color: orange;
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  display: inline-block;
+}
+
+.about-text p {
+  color: #333;
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.about-text ul {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 30px;
+}
+
+.about-text ul li {
+  padding-left: 20px;
+  position: relative;
+  margin-bottom: 10px;
+  color: #444;
+}
+
+.about-text ul li::before {
+  content: '•';
+  color: #007bff;
+  position: absolute;
+  left: 0;
+}
+
+.read-more-btn {
+  background-color: orange;
+  color: #fff;
+  padding: 12px 25px;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: 600;
+  display: inline-block;
+}
+
+.about-image {
+  flex: 1;
+  text-align: center;
+  min-width: 300px;
+}
+
+.about-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+
+/*form*/
+
+.travel-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(to right, #000000a0, #000000a0), url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh7gIH7qUZVXRlMczb0twJbQxVNTUrhZvRIN66ULAnc4cEQ8SRxqhX7LQv6Pk9p5ZcpTWc5OhZuRjRmw31c9GHHIBwhfXuyC2SNtUtOaIzhGyYEW8KeFNH6tqIgJ17OKyku_ZBr/s1600/DSC_4312.jpg') no-repeat center/cover;
+  padding: 60px 50px;
+  color: white;
+}
+
+.left-panel {
+  max-width: 50%;
+}
+
+.left-panel h1 {
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.left-panel p {
+  font-size: 16px;
+  margin-bottom: 30px;
+}
+
+.info-card {
+  background-color: rgba(255, 255, 255, 0.15);
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.info-card h2 {
+  font-size: 20px;
+  margin: 0;
+}
+
+.info-card h2 span {
+  color: orange;
+  font-size: 24px;
+  font-weight: bold;
+  margin-right: 8px;
+}
+
+.info-card p {
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+.right-form {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  width: 320px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+.form-box small {
+  font-weight: 700;
+  color: #999;
+}
+
+.form-box h2 {
+  color: orange;
+  margin: 5px 0;
+}
+
+.form-box .subtitle {
+  font-size: 13px;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.form-box form input {
+  width: 100%;
+  padding: 10px 15px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+.form-box button {
+  width: 100%;
+  background: orange;
+  color: white;
+  border: none;
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+
+/*fotter*/
+.site-footer {
+  background: url('footer-bg.jpg') no-repeat center/cover;
+  background-color: orange;
+  color: black;
+  padding: 60px 20px;
+}
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  max-width: 1200px;
+  margin: auto;
+}
+.footer-col {
+  flex: 1;
+  min-width: 220px;
+}
+.logo-about h2 {
+  font-size: 24px;
+  display: inline-block;
+  margin-bottom: 10px;
+  color: black;
+}
+.logo-about p {
+  font-size: 14px;
+  line-height: 1.6;
+}
+.social-icons a {
+  color: black;
+  margin-right: 12px;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+.social-icons a:hover {
+  color: #d80000;
+}
+.footer-col h3 {
+  font-size: 18px;
+  margin-bottom: 12px;
+  color: black;
+}
+.footer-col ul {
+  list-style: none;
+  padding: 0;
+}
+.footer-col ul li {
+  margin-bottom: 8px;
+}
+.footer-col ul li a {
+  color: black;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+.footer-col ul li a:hover {
+  color: #d80000;
+}
+.footer-col p {
+  font-size: 14px;
+  line-height: 1.6;
+}
+.footer-bottom {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 13px;
+  color: black;
+  border-top: 1px solid #444;
+  padding-top: 20px;
+}
+
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer-col {
+    text-align: center;
+  }
+}
+
+
+
+}
